@@ -30,6 +30,10 @@ a {
 a:hover {
     color: #7300ff;
 }
+a:focus-visible {
+    outline: none !important;
+    border: none !important
+}
 
 h1 {
     font-size: 45px;
