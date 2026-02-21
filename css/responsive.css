@@ -1,0 +1,130 @@
+/* Responsive  */
+
+/* Mobile Devices    */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .row {
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    .profile-section h2 {
+        font-size: 35px;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5 {
+        padding: 10px 0px;
+    }
+
+    .menu-button-container {
+        display: flex;
+    }
+
+    .menu {
+        position: absolute;
+        top: 23px;
+        margin-top: 50px;
+        left: 0;
+        flex-direction: column;
+        width: 75%;
+        justify-content: flex-start;
+        align-items: center;
+        transition: all .2s ease-in-out;
+    }
+
+    #menu-toggle~.menu li {
+        display: none;
+    }
+
+    #menu-toggle:checked~.menu {
+        height: 100vh;
+        background-color: #fff;
+    }
+
+    #menu-toggle:checked~.menu li {
+        display: block;
+        height: 55px;
+        padding: 16px;
+        width: 100%;
+    }
+
+    .bring-box {
+        padding: 20px 16px;
+    }
+
+    .row>div {
+        width: 100% !important;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer .row {
+        gap: 5px;
+    }
+
+    footer ul {
+        justify-content: center;
+    }
+
+    .skill-section .wrapper {
+        padding: 0px 16px;
+    }
+
+    .skill-details {
+        padding: 0px 0px 30px 0px;
+    }
+
+    .skill-box {
+        padding: 20px 30px 40px 30px;
+    }
+
+    .Project-details {
+        text-align: center;
+        width: 100%;
+    }
+
+    .resume {
+        display: none;
+    }
+
+    .menu li:last-child {
+        display: block;
+    }
+}
+
+/* Mobile Devices End   */
+
+/* Tab Devices    */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .row {
+        gap: 30px;
+    }
+
+    .skill-section .wrapper {
+        padding: 0px 70px;
+    }
+
+}
+
+/* Tab Devices End   */
+
+/* Desktop    */
+@media (min-width: 1024px) {}
+
+/* Desktop End */
